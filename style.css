@@ -16,6 +16,13 @@ body {
   text-align: center;
 }
 
+.contents {
+  line-height: 100px;
+  text-indent: 75px;
+  border-style: double;
+  border-radius: 20px;
+}
+
 /*Table of contents*/
 #toc_container {
     background: #f9f9f9 none repeat scroll 0 0;
