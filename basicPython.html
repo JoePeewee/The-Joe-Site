@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tutorialStyle.css">
+    <title>Basic Python</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="#default" class="logo">The Joe Site</a>
+      <div class="header-right">
+        <a class="active" href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+   <div class="title">
+    <h1 id="Top">Basic Python</h1>
+  </div>
+  <img src="Photos/Python-Symbol.png" alt="Python_image" width="960" height="540">
+  <div id="toc_container">
+    <h1 class="toc_title">Contents</h1>
+    <ul class="toc_list">
+      <li><a href="#First_Point_Header"><h3>1. What is Python and why should you learn it?</h3></a></li>
+      <li><a href="#Second_Point_Header"><h3>2. Getting started</h3></a></li>
+      <li><a href="#Third_Point_Header"><h3>3. Using variables</h3></a></li>
+      <!--This link from third to fifth because I didn't want to rename them all-->
+      <li><a href="#Fifth_Point_Header"><h3>4. Using replace & join method</h3></a></li>
+      <li><a href="#Sixth_Point_Header"><h3>5. Using lists</h3></a></li>
+      <li><a href="#Seventh_Point_Header"><h3>6. Using split method</h3></a></li>
+      <li><a href="#Eighth_Point_Header"><h3>7. Using keyboard input</h3></a></li>
+      <li><a href="#Ninth_Point_Header"><h3>8. if, else, and elif statements</h3></a></li>
+      <li><a href="#Tenth_Point_Header"><h3>9. For and while loops</h3></a></li>
+      <li><a href="#Eleventh_Point_Header"><h3>10. Using functions</h3></a></li>
+      <li><a href="#Twelfth_Point_Header"><h3>Sources</h3></a></li>
+    </ul>
+    </div>
+    <h2 id="First_Point_Header">What is Python and why should you learn it?</h2>
+          <p> Python is an interpreted, object-oriented, high-level programming language. Originally released in 1991,<br> Python is known for being one
+          of the most simple programming languages to learn due to the syntax<br>
+          being comparitable to English. One of the biggest downside to Python is slower performance.</p>
+          
+    <h2 id="Second_Point_Header">Getting started</h2>
+    <p>Getting started, you will need an IDE, or integrated development environment. An example of<br>
+    an IDE is Pycharm. In Python, the print function, print(), is used to output to the console.<br>
+    you should also keep in mind that you do not need to declare the end of<br>
+    a line, unlike some other programming languages.</p>
+    </p>
+    <h2 id="Third_Point_Header">Using variables</h2>
+    <p> Variables are an important part of programming, in any language. Varibles store information<br>
+    which can be accessed in later code. Varibles have diffrent types, such as strings, integers, and<br>
+    booleans (true or false). Unlike most other programming languages, you do not need to declare<br>
+    what type a variable is, as Python will figure it out by itself. To initialize a variable, just<br>
+    put the name of the varialbe, an equal sighn, then the value you want to assign to the variable.<br>
+    Examples: <br>
+      variable = &#8216;string&#8217;<br>
+      number = 1234<br>
+      boolean = True
+    <h2 id="Fith_Point_Header">Using replace & join method</h2>
+    <p>The replace function is used to find specific words inside a string and replace
+    them with another word.<br> An example of this is:<br>
+    yourVarible.replace(&#8216;word you want to replace&#8217;, &#8216;word to replace with&#8217;)</p>
+    <p> The join function is to combine two or more strings and get one. Example:<br>yourVariable.join(firstString, secondString)<br>
+    Another way to join strings is to use the &#8216;+&#8217; symbol between the strings you want to join. Example:<br>
+      newString = firstString + secondString</p>
+    
+    <h2 id="Sixth_Point_Header">Using lists</h2>
+    <p>List can contain any type of variable and as many as you want. To initialize a empty list, you write: myList = []. You can initialize<br> the list with elements by seperating them with a comma, myList = [firstElement, secondElement, thirdElement]<br>
+    Lists are orded by index. The first element's index is 0, next is 1, etc.
+    you can add elements to a list<br> by using the .append(nameOfElement) function and remove elements by using the .pop(elementIndex) function.</p>
+    <h2 id="Seventh_Point_Header">Using split method</h2>
+      <p> The split method allows you to seperate a string into a list of mutiple strings where you want.<br>
+      Example: myString.split(&#8216;characterToSplitAt&#8217;)<br>
+        If you leave the brackets empty, the default character to split at is spaces.</p>
+    <h2 id="Eighth_Point_Header">Using keyboard input</h2>
+      Keyboard inputs are exactly what they sound like, when someone types something into the console,<br> your code will read it and store it as a variable. To do this, you write yourVarible = input()<br> it's important to note that the input will always be a string, if you want it to be an integer, do this:<br>
+      yourInteger = int(input())
+    <h2 id="Nineth_Point_Header">if, else, and elif statements</h2>
+      <p> If statments are useful to know and understand in coding. If statments allows the code to<br> output diffrent things depending on the input though logical conditions. Example of conditions include,<br>
+        equals: a == b<br>
+        not equals: a != b<br>
+        less than: a	&lt; b<br>
+        greater than: or a &gt;; b<br>
+        These are used in if statements like this:<br>
+        if a == b:<br>
+        you should also note that Python knows if code is inside an if statment if it is indented.<br>
+        else statments are used after if statments, and will run the code only if the if statment is false,<br> so if a did not equal b in the if statment above. Example:<br>
+        else:<br>
+        elif statments are a combination of if and else statments. They are used instead of multiple if statements to<br> save resources and make the code run faster. If the if statment fails, the program will run the elif statment to<br> check if it is true, instead of checking two if statments everytime the program runs. Example:<br>
+        elif a != b:</p>
+    <h2 id="Tenth_Point_Header">For and while loops</h2>
+    <p> While loops loop using conditionals, which are mentioned in if, else, and elif statements to repeatly<br> run certain code as long as the condition is set to true. An example of this is:<br>
+      varible = 1<br>
+      while varible &gt; 10:<br>
+      varible += 1<br>
+      The first line of this code inizilizes a varible, and sets the value to 'one'. The second line of the code<br> is the while loop. The while loop will loop the code inside of it as long as our varible is less than 10.<br> Inside the code, the varible is increased by 1 everytime the loop runs it. Once the varible is equal<br> to 10, the while loop will be false and stop looping the code.</p>
+    <p> For loops are similar to while loops, but the varible is inizilized in the for loops. Example of this:<br>
+      for i in range (5, 11, 2):<br>
+      In this line, the varible is i, which is set to 0 by Python. the for loop will run 4 times as i increases each time<br> the loop runs. The first number inside the range function is the startinig value of i, the second<br> is the max value of i before the loop stops, and the third value specifies how much i will increase by. The default<br> values for the first and third values is 0 and 1.</p>
+    <h2 id="Eleventh_Point_Header">Using functions</h2>
+    <p> Functions allow you to divide code into blocks that can be called on. If you have repeatitive<br> code that is used many times in your program, such as sometime like finding all the factors of a number,<br> it's more time efficent to use a function. Example:<br>
+      def myFunction():<br>
+      print(&#8216;This is a function, don't forget to indent the code inside functions!&#8217;)<br>
+    <h2 id="Twelfth_Point_Header">Sources:</h2>
+      <p>- <a href="https://www.teradata.com/Glossary/What-is-Python">https://www.teradata.com/Glossary/What-is-Python</a><br>
+      - <a href="https://www.learnpython.org/en/Welcome">https://www.learnpython.org/en/Welcome</a><br>
+      - <a href="https://www.w3schools.com/python/">https://www.w3schools.com/python/</a><br>
+    </div>
+    <a href="#Top"><h3>Back to Top</h3></a>
+  </body>
+</html>
